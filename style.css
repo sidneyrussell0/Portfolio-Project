@@ -1,0 +1,543 @@
+/*everything*/
+html {
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    color: black;
+    font-family: montserrat;
+    background-color: #aea59b;
+    display: flex;
+    width: 100vw;
+    line-height: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(15, 200px);
+    justify-content: center;
+}
+/*fonts*/
+.montserrat-semibold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-reg {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.monoton-regular {
+    font-family: "Monoton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .over-the-rainbow-regular {
+    font-family: "Over the Rainbow", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pattaya-regular {
+    font-family: "Pattaya", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/*Nav Bar*/
+.navbar {
+    background-color: #272727;
+    height: 60px;
+    width: 100vw;
+    padding: 5px 0px 0px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    font-family: "Montserrat", serif;
+    font-size: 25px;
+    font-weight: 600;
+    display: flexbox;
+    justify-content: center;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar li a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-align: center;
+    color: #f6f6f6;
+    cursor: default;
+}
+
+.navbar li a:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: default;
+}
+/*Header*/
+header {
+    background-image: url(Resources/rockheader.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.883);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: 50% 0;
+    opacity: 0.73;
+    z-index: -1;
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    align-items: center;
+}
+
+.header-fonts {
+    grid-column: 2 / span 9;
+    grid-row: 1 / span 3;
+    margin: 50px 0px 0px 20px;
+    text-align: center;
+    align-self: center;
+    z-index: 1;
+    line-height: 80px;
+}
+
+h1 {
+    font-family: "Pattaya", serif;
+    font-size: 150px;
+    color: #272727;
+    text-align: center;
+    text-shadow: 3px 2px 4px white;
+}
+
+h2 {
+    font-family: "Montserrat", serif;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 1px 4px white;
+}
+
+h1, h2 {
+    padding-top: 50px;
+}
+/*H3 and H4*/
+h3 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 0 #594d3e;
+    font-family: "Montserrat", serif;
+}
+
+h4 {
+    font-family: "Pattaya", serif;
+    font-size: 50px;
+    color: #272727;
+    text-align: center;
+    opacity: 0.75;
+    text-shadow: 3px 3px 5px white;
+    /*594d3e*/
+}
+/*Body*/
+body {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+.aboutme {
+    grid-column: 2 / span 4;
+    grid-row: 5 / span 3;
+    margin-left: 175px;
+    padding:30px;
+    text-align: center;
+    align-self: center;
+    background: #1a1a1845;
+}
+
+p.aboutme {
+    font-size: 24px;
+    text-align: center;
+}
+
+.projects {
+    margin-left: 10px;
+    padding:0px 50px 20px 0px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    grid-column: 1 / span 4;
+    grid-row: 8 / span 2;
+    background: #1a1a1845;
+}
+
+#projects {
+    padding-left: 50px;
+}
+
+.projects ul {
+    display: block;
+    list-style-type: none;
+    line-height: 50px;
+}
+
+.projects li a {
+    color: black;
+    text-decoration: underline;
+}
+
+.projects li a:hover {
+    color: #f6f6e9;
+    text-decoration: underline;
+}
+
+.photo1 {
+    grid-column: 5 / span 4;
+    grid-row: 9 / span 3;
+}
+
+.photo2 {
+    grid-column: 2 / span 4;
+    grid-row: 11 / span 3;
+}
+
+.circle-photo {
+    border: 10px solid #f6f6e9;
+    border-radius: 50%;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.skills {
+    margin-left: 245px;
+    padding:0px 40px 20px 0px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 4 / span 6;
+    grid-row: 12 / span 2;
+    background: #1a1a1845;
+}
+
+#skills {
+    padding-left: 40px;
+}
+
+.skills ul {
+    list-style-type: none;
+    line-height: 50px;
+}
+/*Footer*/
+.contactme {
+    grid-column: 2 / span 5;
+    grid-row: 14 / span 2;
+    justify-items: center;
+    text-align: center;
+    align-self: center;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+    background: #1a1a1845;
+}
+
+footer {
+    text-align: center;
+}
+
+.contactme a {
+    color: black;
+    text-decoration: underline;
+}
+
+.contactme a:hover {
+    color: #f6f6e9;
+    text-decoration: underline;
+}
+/*Mixed Messages Page*/
+.mixed-grid-container {
+    display: flexbox;
+    justify-content: center;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.mixed-header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.mixed-p1 {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 200px;
+    padding: 0px 20px;
+    text-align: center;
+    background: #1a1a1845;
+}
+
+.mixed-list {
+    padding-left: 30px;
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 300px;
+    background: #1a1a1845;
+}
+
+.mixed-list-ul {
+    padding-left: 30px;
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 300px;
+    background: #1a1a1845;
+}
+
+.mixed-p2 {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 300px;
+    text-align: center;
+    background: #1a1a1845;
+}
+
+.mixed-p3 {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 300px;
+    text-align: center;
+    background: #1a1a1845;
+}
+
+.mixed-image {
+    display: flex;
+    position: relative;
+    align-self: center;
+    margin: auto;
+    max-height: 800px;
+    max-width: 800px;
+}
+
+.mixed-footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+}
+/*Flexbox Page*/
+.flexbox-grid-container {
+    display: flexbox;
+    justify-content: center;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.flex-p {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 200px;
+    padding: 0px 20px;
+    text-align: center;
+    background: #1a1a1845;
+}
+
+.flex-p1 {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 50px;
+    padding: 0px 20px;
+    text-align: center;
+    background: #1a1a1845;
+}
+
+ .flex-image {
+    display: flex;
+    position: relative;
+    align-self: center;
+    margin: auto;
+    max-height: 800px;
+    max-width: 800px;
+ }
+
+ .flex-footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+ }
+/*Number Guesser Page*/
+.number-grid-container {
+    display: flexbox;
+    justify-content: center;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.number-header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.number-p {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 200px;
+    padding: 0px 20px;
+    text-align: center;
+    background: #1a1a1845;
+}
+
+.number-image {
+    display: flex;
+    position: relative;
+    align-self: center;
+    margin: auto;
+    max-height: 800px;
+    max-width: 800px;
+}
+
+.number-footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+}
+/*The Tea Cozy Page*/
+.tea-grid-container {
+    display: flexbox;
+    justify-content: center;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.tea-header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.tea-p {
+    display: flex;
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 200px;
+    padding: 0px 20px;
+    text-align: center;
+    background: #1a1a1845;
+}
+
+.tea-image {
+    display: flex;
+    position: relative;
+    align-self: center;
+    margin: auto;
+    max-height: 800px;
+    max-width: 800px;
+}
+
+.tea-footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+}
+/*Cursor*/
+.cursor-ball {
+    width: 8px;
+    height: 8px;
+    background-color: #423f3f;
+}
+.cursor-outline {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #f7f4f4;
+    transition: all 0.1s ease;
+}
+
+.cursor-ball, .cursor-outline {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-mousedown {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #000;
+    background-color: #fffffe;
+}
